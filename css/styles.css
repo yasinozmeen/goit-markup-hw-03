@@ -22,36 +22,40 @@ body {
 body a {
   text-decoration: none;
 }
-.container {
+
+header {
+  background-color: #fff;
+  height: 76px;
+  align-content: center;
+}
+
+.section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
   align-items: center;
 }
-.logo {
-  text-align: justify;
+
+header .section {
+  flex-direction: row;
 }
-
-header.section {
-  background-color: #fff;
-  border-bottom: 1px solid rgba(231, 233, 252, 1);
-
+.section nav {
   display: flex;
-  padding: 24px 156px;
-  align-items: center;
-
-  justify-content: space-between;
+  gap: 40px;
+  margin-left: 76px;
+}
+.section address {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
 }
 
 header .logo {
   font-family: "Raleway", sans-serif;
   color: #2e2f42;
   vertical-align: middle;
-}
-
-header nav {
-  display: flex;
-  margin: 0 auto 0 76px;
-  gap: 40px;
 }
 
 .logo_web {
@@ -70,10 +74,7 @@ header nav {
 :active {
   color: rgba(64, 75, 191, 1);
 }
-address {
-  display: flex;
-  gap: 40px;
-}
+
 address a {
   line-height: 24px;
   letter-spacing: 2%;
@@ -86,13 +87,13 @@ address a:hover,
 }
 
 .hero_image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #2e2f42;
   color: #ffffff;
-  height: 600px;
+  text-align: center;
+}
+.hero_image .section {
+  justify-content: center;
+  height: 660px;
   gap: 48px;
 }
 
@@ -102,14 +103,15 @@ address a:hover,
   font-size: 56px;
   line-height: 60px;
   letter-spacing: 2%;
+  text-align: center;
   max-width: 496px;
-  margin: 0;
 }
 
 .hero_image_button {
   background-color: #4d5ae5;
   color: inherit;
   font-weight: 500;
+  vertical-align: middle;
   letter-spacing: 4%;
   line-height: 24px;
   border-style: none;
@@ -117,7 +119,6 @@ address a:hover,
   color: #fff;
   width: 169px;
   height: 56px;
-  border-radius: 4px;
 }
 
 .hero_image_button:hover {
@@ -125,6 +126,8 @@ address a:hover,
   background-color: rgba(64, 75, 191, 1);
 }
 
+.section_1 .section {
+}
 .future_title {
   font-weight: 500;
   font-size: 20px;
@@ -138,62 +141,16 @@ address a:hover,
   color: rgba(67, 68, 85, 1);
 }
 
-.section {
-  padding: 120px 0;
-  width: 100vw;
-  margin: auto;
-  max-width: 1440px;
-}
-
-.section_1 ul {
-  max-width: 1128px;
-  min-height: 104px;
-  gap: 24px;
-  display: flex;
-  margin: auto;
-}
-
 .section_2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
   background-color: rgba(244, 244, 253, 1);
 }
-.section_title {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  letter-spacing: 2%;
-}
-.section_2 ul {
-  display: flex;
-  gap: 24px;
-}
+
 .section_2 li {
   width: 264px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding-bottom: 32px;
-  margin: auto;
-
-  border-radius: 4px;
-
-  background-color: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .section_2_text {
   background-color: white;
-
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 232px;
 }
 .section_2_name {
   color: rgba(46, 47, 66, 1);
@@ -207,33 +164,6 @@ address a:hover,
   line-height: 24px;
   text-align: center;
   color: rgba(67, 68, 85, 1);
-}
-
-.section_3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
-  max-width: 1128px;
-}
-.section_3 ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.card_content {
-  width: 360;
-  height: 120;
-  gap: 8px;
-  padding-top: 32px;
-  padding-right: 16px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-
-  border: 1px solid;
-  border-top: 0;
-  border-color: rgba(231, 233, 252, 1);
 }
 
 .section_3_title {
@@ -259,14 +189,6 @@ address a:hover,
 footer {
   background-color: rgba(46, 47, 66, 1);
   color: rgba(244, 244, 253, 1);
-}
-
-.footer-text {
-  width: 264px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-left: 156px;
 }
 
 footer p {
