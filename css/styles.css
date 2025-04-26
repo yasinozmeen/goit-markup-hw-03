@@ -90,10 +90,14 @@ address a:hover,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #2e2f42;
   color: #ffffff;
   height: 600px;
   gap: 48px;
+}
+
+.hero_image-bg {
+  background-color: #2e2f42;
+  width: 100vw;
 }
 
 .hero_image h1 {
@@ -158,6 +162,9 @@ address a:hover,
   flex-direction: column;
   align-items: center;
   gap: 72px;
+}
+.section_2-bg {
+  width: 100vw;
   background-color: rgba(244, 244, 253, 1);
 }
 .section_title {
@@ -255,9 +262,11 @@ address a:hover,
   color: rgba(67, 68, 85, 1);
   line-height: 24px;
 }
-
-footer {
+.footer-bg {
   background-color: rgba(46, 47, 66, 1);
+  width: 100vw;
+}
+footer {
   color: rgba(244, 244, 253, 1);
 }
 
